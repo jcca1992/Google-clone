@@ -1,0 +1,178 @@
+:root{
+--white: #FBFCF4;
+}
+body{
+    /* background-image: url(../images/fondo.png);---------------- este fondo es usado cuando se abre una nueva pestaña*/
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    /* display:flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    font-family: 'Segoe UI', 'roboto', arial, sans-serif;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+}
+/* -------------------inicio de navbar */
+header{
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    display: flex;
+    justify-content: flex-end; /*hace que muevan a la derecha la ul*/
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav .nav-right-section .menu-icon{
+    /* background-image: url(../images/menu-icon.png); */
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+nav .nav-right-section img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+/* ----------------------inicio del main */
+main{
+    margin-top: 80px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img{
+    width: 300px
+}
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{
+    width: 420px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+    
+}
+
+main .main-input .search-icon{
+    /* background-image: url(../images/lupa.png); */
+    background-image: url('https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 10px;
+    width: 18px;
+    height: 18px;
+}
+main .main-input a{
+    /* background-image: url(../images/microphone.png); */
+    background-image: url('https://www.cuecamp.com/wp-content/uploads/2019/11/Google_mic.svg_.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+/* -------------botones*/
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div{
+    display: inline-block;
+}
+main .main-buttons button{
+    height: 36px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+main .main-buttons button:hover{
+    background: #f8f8f8;
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    cursor: pointer;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+/* ---------------fin del main */
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute; /*Esto permite colocar el footer hasta al fondo de la pagina siempre*/
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+footer .footer-left{
+    justify-content: left;
+}
+footer .footer-right{
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
